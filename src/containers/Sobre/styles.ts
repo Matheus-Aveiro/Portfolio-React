@@ -1,6 +1,8 @@
 import styled from 'styled-components'
 
 export const GithubSecao = styled.div`
+  display: flex;
+  justify-content: space-evenly;
   margin-top: 32px;
   margin-bottom: 64px;
 
