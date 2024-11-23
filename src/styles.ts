@@ -28,11 +28,14 @@ export const Container = styled.div`
   width: 100%;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 160px auto;
-  column-gap: 56px;
+  grid-template-columns: 160px 27px 28px auto;
 
   @media (max-width: 768px) {
     max-width: 80%;
     display: block;
   }
+`
+
+export const BorderRight = styled.div`
+  border-right: 2px solid ${({ theme }) => theme.corDaBorda};
 `
