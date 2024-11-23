@@ -9,5 +9,6 @@ export const P = styled.p<Props>`
       ? props.theme.corPrincipal
       : props.theme.corSecundaria};
   line-height: 22px;
+  font-weight: ${(props) => (props.tipo === 'principal' ? 'bold' : 'normal')};
   text-align: justify;
 `

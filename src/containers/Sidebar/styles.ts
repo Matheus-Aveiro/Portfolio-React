@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import { P } from '../../components/Paragrafo/styles'
 
 export const Descricao = styled(P)`
-  margin: 24px 0;
+  margin-bottom: ${(props) => (props.tipo === 'principal' ? '8px' : '16px')};
 `
 export const BotaoTema = styled.button`
   border-radius: 12px;
@@ -15,6 +15,8 @@ export const BotaoTema = styled.button`
 `
 
 export const SidebarContainer = styled.div`
+  display: grid;
+  justify-items: center;
   position: sticky;
   top: 80px;
   left: 0;
