@@ -6,9 +6,10 @@ import { Card, LinkBotao } from './styles'
 const Projeto = () => {
   return (
     <Card>
-      <Titulo>Projeto Lista de tarefas</Titulo>
-      <Paragrafo tipo="secundario">Lista de tarefas feita com VueJS</Paragrafo>
-      <LinkBotao>Visualizar</LinkBotao>
+      <Titulo>Titulo</Titulo>
+      <Paragrafo tipo="secundario">Descrição</Paragrafo>
+      <LinkBotao>Deploy</LinkBotao>
+      <LinkBotao>Repositório</LinkBotao>
     </Card>
   )
 }
