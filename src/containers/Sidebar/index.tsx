@@ -1,5 +1,5 @@
 import Avatar from '../../components/Avatar'
-import { FaLinkedin, FaInstagram } from 'react-icons/fa' // Importa os ícones
+import { FaLinkedin, FaInstagram, FaGithub } from 'react-icons/fa' // Importa os ícones
 import {
   Descricao,
   BotaoTema,
@@ -38,6 +38,14 @@ const Sidebar = (props: Props) => (
           aria-label="Instagram"
         >
           <FaInstagram />
+        </IconLink>
+        <IconLink
+          href="https://www.Github.com/matheus-aveiro"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Github"
+        >
+          <FaGithub />
         </IconLink>
       </SocialLinks>
       <BotaoTema onClick={props.trocaTema}>Trocar tema</BotaoTema>
