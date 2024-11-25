@@ -4,7 +4,7 @@ export const GithubSecao = styled.div`
   display: flex;
   justify-content: space-evenly;
   margin-top: 32px;
-  margin-bottom: 64px;
+  margin-bottom: 32px;
 
   img {
     height: 157px;
