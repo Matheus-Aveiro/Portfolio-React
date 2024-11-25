@@ -1,17 +1,29 @@
-import Paragrafo from '../Paragrafo'
+import { Card, LinkBotao, BotaoContainer } from './styles'
 import Titulo from '../Titulo'
+import Paragrafo from '../Paragrafo'
 
-import { Card, LinkBotao } from './styles'
-
-const Projeto = () => {
-  return (
-    <Card>
-      <Titulo>Titulo</Titulo>
-      <Paragrafo tipo="secundario">Descrição</Paragrafo>
-      <LinkBotao>Deploy</LinkBotao>
-      <LinkBotao>Repositório</LinkBotao>
-    </Card>
-  )
+interface ProjetoProps {
+  name: string
+  description: string | null
+  html_url: string
+  homepage?: string | null
 }
+
+const Projeto = ({ name, description, html_url, homepage }: ProjetoProps) => (
+  <Card>
+    <Titulo>{name}</Titulo>
+    <Paragrafo tipo="secundario">{description || 'Sem descrição'}</Paragrafo>
+    <BotaoContainer>
+      <LinkBotao href={html_url} target="_blank" rel="noopener noreferrer">
+        Repositório
+      </LinkBotao>
+      {homepage && (
+        <LinkBotao href={homepage} target="_blank" rel="noopener noreferrer">
+          Deploy
+        </LinkBotao>
+      )}
+    </BotaoContainer>
+  </Card>
+)
 
 export default Projeto
