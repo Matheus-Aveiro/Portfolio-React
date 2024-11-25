@@ -1,6 +1,12 @@
 import Avatar from '../../components/Avatar'
-
-import { Descricao, BotaoTema, SidebarContainer } from './styles'
+import { FaLinkedin, FaInstagram } from 'react-icons/fa' // Importa os ícones
+import {
+  Descricao,
+  BotaoTema,
+  SidebarContainer,
+  SocialLinks,
+  IconLink
+} from './styles'
 
 type Props = {
   trocaTema: () => void
@@ -16,6 +22,24 @@ const Sidebar = (props: Props) => (
       <Descricao tipo="secundario" fontSize={12}>
         Engenheiro Full-Stack
       </Descricao>
+      <SocialLinks>
+        <IconLink
+          href="https://www.linkedin.com/in/aveiromat"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="LinkedIn"
+        >
+          <FaLinkedin />
+        </IconLink>
+        <IconLink
+          href="https://www.instagram.com/matheusaveiro"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Instagram"
+        >
+          <FaInstagram />
+        </IconLink>
+      </SocialLinks>
       <BotaoTema onClick={props.trocaTema}>Trocar tema</BotaoTema>
     </SidebarContainer>
   </aside>
