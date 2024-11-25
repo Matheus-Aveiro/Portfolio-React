@@ -11,4 +11,7 @@ export const P = styled.p<Props>`
   line-height: 22px;
   font-weight: ${(props) => (props.tipo === 'principal' ? 'bold' : 'normal')};
   text-align: justify;
+  min-height: 48px;
+  display: flex;
+  align-items: start;
 `
