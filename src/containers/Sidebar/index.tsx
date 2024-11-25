@@ -32,7 +32,7 @@ const Sidebar = (props: Props) => (
           <FaLinkedin />
         </IconLink>
         <IconLink
-          href="https://www.instagram.com/matheusaveiro"
+          href="https://www.instagram.com/aveiromat"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="Instagram"
